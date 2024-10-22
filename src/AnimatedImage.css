@@ -1,0 +1,35 @@
+@keyframes shapeChange {
+    0% {
+      clip-path: path('M150,0 Q190,20 220,50 T250,100 Q270,150 230,200 T150,250 Q100,250 70,200 T0,150 Q0,100 70,50 T150,0');
+    }
+    25% {
+      clip-path: path('M150,0 Q180,25 220,50 T250,90 Q260,130 220,200 T150,240 Q90,250 60,200 T0,150 Q10,100 60,60 T150,0');
+    }
+    50% {
+      clip-path: path('M150,0 Q200,20 230,50 T270,100 Q280,150 240,200 T150,250 Q100,250 70,200 T10,150 Q0,100 50,50 T150,0');
+    }
+    75% {
+      clip-path: path('M150,0 Q190,30 220,60 T260,110 Q270,160 230,210 T150,250 Q90,250 60,200 T10,150 Q0,100 50,60 T150,0');
+    }
+    100% {
+      clip-path: path('M150,0 Q190,20 220,50 T250,100 Q270,150 230,200 T150,250 Q100,250 70,200 T0,150 Q0,100 70,50 T150,0');
+    }
+  }
+  
+  .animated-image {
+    display: inline-block;
+    position: relative;
+    width: 300px; /* Adjust size as needed */
+    height: 300px; /* Adjust size as needed */
+    overflow: hidden;
+    animation: shapeChange 6s infinite ease-in-out; /* Bubble shape animation */
+    clip-path: path('M150,0 Q190,20 220,50 T250,100 Q270,150 230,200 T150,250 Q100,250 70,200 T0,150 Q0,100 70,50 T150,0'); /* Initial bubble shape */
+  }
+  
+  .animated-image img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  
